@@ -44,7 +44,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import isNonConfigurablePropertyIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property-in@deno/mod.js';
+import isNonConfigurablePropertyIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property-in@v0.1.0-deno/mod.js';
 ```
 
 #### isNonConfigurablePropertyIn( value, property )
@@ -136,7 +136,7 @@ bool = isNonConfigurablePropertyIn( obj, 'boop' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isNonConfigurablePropertyIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property-in@deno/mod.js';
+import isNonConfigurablePropertyIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property-in@v0.1.0-deno/mod.js';
 
 var bool = isNonConfigurablePropertyIn( [ 'a' ], 'length' );
 // returns true
