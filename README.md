@@ -35,7 +35,23 @@ limitations under the License.
 
 > Test if an object's own or inherited property is non-configurable.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-nonconfigurable-property-in
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
@@ -43,32 +59,8 @@ limitations under the License.
 
 <!-- eslint-disable id-length -->
 
-To use in Observable,
-
 ```javascript
-isNonConfigurablePropertyIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property-in@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isNonConfigurablePropertyIn = require( 'path/to/vendor/umd/assert-is-nonconfigurable-property-in/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property-in@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isNonConfigurablePropertyIn;
-})();
-</script>
+var isNonConfigurablePropertyIn = require( '@stdlib/assert-is-nonconfigurable-property-in' );
 ```
 
 #### isNonConfigurablePropertyIn( value, property )
@@ -159,13 +151,8 @@ bool = isNonConfigurablePropertyIn( obj, 'boop' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property-in@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var isNonConfigurablePropertyIn = require( '@stdlib/assert-is-nonconfigurable-property-in' );
 
 var bool = isNonConfigurablePropertyIn( [ 'a' ], 'length' );
 // returns true
@@ -193,11 +180,6 @@ bool = isNonConfigurablePropertyIn( null, 'a' );
 
 bool = isNonConfigurablePropertyIn( void 0, 'a' );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -242,6 +224,11 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
+## License
+
+See [LICENSE][stdlib-license].
+
+
 ## Copyright
 
 Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
@@ -285,19 +272,21 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/assert-is-nonconfigurable-property-in/tree/esm
 [branches-url]: https://github.com/stdlib-js/assert-is-nonconfigurable-property-in/blob/main/branches.md
 
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-nonconfigurable-property-in/main/LICENSE
+
 <!-- <related-links> -->
 
-[@stdlib/assert/is-configurable-property-in]: https://github.com/stdlib-js/assert-is-configurable-property-in/tree/umd
+[@stdlib/assert/is-configurable-property-in]: https://github.com/stdlib-js/assert-is-configurable-property-in
 
-[@stdlib/assert/is-enumerable-property-in]: https://github.com/stdlib-js/assert-is-enumerable-property-in/tree/umd
+[@stdlib/assert/is-enumerable-property-in]: https://github.com/stdlib-js/assert-is-enumerable-property-in
 
-[@stdlib/assert/is-nonconfigurable-property]: https://github.com/stdlib-js/assert-is-nonconfigurable-property/tree/umd
+[@stdlib/assert/is-nonconfigurable-property]: https://github.com/stdlib-js/assert-is-nonconfigurable-property
 
-[@stdlib/assert/is-nonenumerable-property-in]: https://github.com/stdlib-js/assert-is-nonenumerable-property-in/tree/umd
+[@stdlib/assert/is-nonenumerable-property-in]: https://github.com/stdlib-js/assert-is-nonenumerable-property-in
 
-[@stdlib/assert/is-readable-property-in]: https://github.com/stdlib-js/assert-is-readable-property-in/tree/umd
+[@stdlib/assert/is-readable-property-in]: https://github.com/stdlib-js/assert-is-readable-property-in
 
-[@stdlib/assert/is-writable-property-in]: https://github.com/stdlib-js/assert-is-writable-property-in/tree/umd
+[@stdlib/assert/is-writable-property-in]: https://github.com/stdlib-js/assert-is-writable-property-in
 
 <!-- </related-links> -->
 
