@@ -44,6 +44,11 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
+import isNonConfigurablePropertyIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property-in@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-nonconfigurable-property-in/tags). For example,
+
+```javascript
 import isNonConfigurablePropertyIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property-in@v0.2.2-deno/mod.js';
 ```
 
@@ -140,7 +145,7 @@ bool = isNonConfigurablePropertyIn( obj, 'boop' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isNonConfigurablePropertyIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property-in@v0.2.2-deno/mod.js';
+import isNonConfigurablePropertyIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonconfigurable-property-in@deno/mod.js';
 
 var bool = isNonConfigurablePropertyIn( [ 'a' ], 'length' );
 // returns true
